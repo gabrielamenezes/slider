@@ -4,7 +4,7 @@ body {
 .container {
     width: 100%;
     height: 80vh;
-    overflow: hidden; /* esconde scroll*/
+    // overflow: hidden; /* esconde scroll*/
     position: relative; 
 
     .slider {
@@ -41,5 +41,22 @@ body {
     #next {
         left: unset;
         right: 30px;
+    }
+
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgb(184, 184,184);
+            margin: 0 5px;
+
+            &.active {
+                background: grey;
+            }
+        }
     }
 }
